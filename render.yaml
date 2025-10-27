@@ -1,0 +1,15 @@
+{
+  "services": [
+    {
+      "type": "web",
+      "name": "nfe-multisource",
+      "env": "python",
+      "plan": "free",
+      "region": "oregon",
+      "repo": "fernandohpc18-commits/nfe-multisource",
+      "branch": "main",
+      "buildCommand": "pip install -r requirements.txt",
+      "startCommand": "uvicorn app:app --host 0.0.0.0 --port 10000"
+    }
+  ]
+}
